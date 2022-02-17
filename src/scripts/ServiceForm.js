@@ -23,6 +23,7 @@ mainContainer.addEventListener("click", clickEvent => {
     }
 })
 
+//Export a function that returns the service form HTML
 export const ServiceForm = () => {
     let html = `
         <div class="field">
