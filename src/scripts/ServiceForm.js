@@ -2,6 +2,7 @@ import { sendRequest } from "./dataAccess.js"
 
 const mainContainer = document.querySelector("#container")
 
+//add event listener to the submit new request button
 mainContainer.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "submitRequest") {
         // Get what the user typed into the form fields
@@ -15,7 +16,8 @@ mainContainer.addEventListener("click", clickEvent => {
             description: userDescription,
             address: userAddress,
             budget: userBudget,
-            neededBy: userDate
+            neededBy: userDate,
+            complete: false
         }
 
         // Send the data to the API for permanent storage
