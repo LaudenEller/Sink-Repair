@@ -10,11 +10,7 @@ const mainContainer = document.querySelector("#container")
 const render = () => {
     //Invoke fetches to update app stae from JSON
     fetchRequests()
-    .then(
-        () => {
-            return fetchCompletions()
-        }
-    )
+    .then(fetchCompletions)
     .then(
         () => {
             //Set the innerHTML of the main container to the SinkRepair function

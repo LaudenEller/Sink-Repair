@@ -96,34 +96,34 @@ mainContainer.addEventListener("change", (event) => {
     if (event.target.id.startsWith("idOfRequest--")) {
         const [, requestId] = event.target.id.split("--")
 
-        const completeRequests = getCompletions()
         const requests = getRequests()
         
         //iterate through the requests list and add a matching plumberId property and
         for (const request of requests) {
             //find the request that matches the selected request
-            if (request.id === requestId) {
+            if (request.id === parseInt(requestId)) {
                 //Add a plumberId that matches the name the user selects in the plumber dropdown box
-                request.plumberId = event.target.value
+                request.plumberId = parseInt(event.target.value)
                 //Change value of the complete key on target request object to true
                 request.complete = true
-                //Iterate through the completion array and get the index number of the most recent object
-                const lastIndex = completeRequests.length
+                // //Iterate through the completion array and get the index number of the most recent object
+                // const completeRequests = getCompletions()
+                // const lastIndex = completeRequests.length
                 
                 const completion = {
                     //Set the new completion object's id to the most recent object's index number + 1
-                    id: completeRequests[lastIndex].id + 1,
+                    // id: lastIndex + 1,
                     description: request.description,
-                    requestId: requestId,
-                    plumberId: event.target.value,
+                    requestId: parseInt(requestId),
+                    plumberId: parseInt(event.target.value),
                     date_created: Date.now()
                 }
                 // POST new completion object to JSON by invoking the sendCompletion function and passing the completion object as a parameter
                 sendCompletion(completion)
             }
         }
-        //Invoke the deleteRequest function and pass the selected request id as a parameter to render html and delete targeted request from request list
-    deleteRequest(parseInt(requestId))
+    //     //Invoke the deleteRequest function and pass the selected request id as a parameter to render html and delete targeted request from request list
+    // deleteRequest(parseInt(requestId))
     }
 }
 )

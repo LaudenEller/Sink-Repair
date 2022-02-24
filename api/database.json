@@ -9,15 +9,98 @@
       "name": "Merle"
     }
   ],
-  "completions": [],
+  "completions": [
+    {
+      "description": "asdf",
+      "plumberId": 1,
+      "requestId": 2,
+      "id": 1
+    },
+    {
+      "description": "",
+      "requestId": 3,
+      "plumberId": 1,
+      "date_created": 1645738511287,
+      "id": 2
+    },
+    {
+      "description": "",
+      "requestId": 4,
+      "plumberId": 2,
+      "date_created": 1645738514302,
+      "id": 3
+    },
+    {
+      "description": "asdf",
+      "requestId": 2,
+      "plumberId": 1,
+      "date_created": 1645738620584,
+      "id": 4
+    },
+    {
+      "description": "lsakjdfkjhsdkj",
+      "requestId": 7,
+      "plumberId": 1,
+      "date_created": 1645738632166,
+      "id": 5
+    }
+  ],
   "requests": [
     {
-      "description": "2345",
-      "address": "5342",
+      "description": "asdf",
+      "address": "fsa",
       "budget": "098",
-      "neededBy": "2022-03-04",
+      "neededBy": "0009-08-09",
       "complete": false,
-      "id": 66
+      "id": 2
+    },
+    {
+      "description": "",
+      "address": "",
+      "budget": "",
+      "neededBy": "",
+      "complete": false,
+      "id": 3
+    },
+    {
+      "description": "",
+      "address": "",
+      "budget": "",
+      "neededBy": "",
+      "complete": false,
+      "id": 4
+    },
+    {
+      "description": "",
+      "address": "",
+      "budget": "",
+      "neededBy": "",
+      "complete": false,
+      "id": 5
+    },
+    {
+      "description": "",
+      "address": "",
+      "budget": "",
+      "neededBy": "",
+      "complete": false,
+      "id": 6
+    },
+    {
+      "description": "lsakjdfkjhsdkj",
+      "address": "",
+      "budget": "",
+      "neededBy": "",
+      "complete": false,
+      "id": 7
+    },
+    {
+      "description": "dfdsgf",
+      "address": "",
+      "budget": "",
+      "neededBy": "",
+      "complete": false,
+      "id": 8
     }
   ]
 }
